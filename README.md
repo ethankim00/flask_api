@@ -1,7 +1,7 @@
-# iris api
+Flask api
 
 ## Description
-Api to make predictions on the Iris dataset. The dataset consists 4 measurements for 150 samples of 3 different varieties of Irises. 
+Flask API to serve predictions on the Iris dataset. The dataset consists 4 measurements for 150 samples of 3 different varieties of Irises. 
 ## Usage
 Takes a Post request containing one or more of the feature measurements and returns the predicted class as a string in JSON format
 
@@ -25,7 +25,7 @@ Example
 
 The application.py file can be run to initialize the server and requests submitted via postman. 
 
-If one or more of the predictors is missing it is replaced with the sample mean. For example if no value is specified for sepal_width, the model will use the average value of 3.06 to return a prediction. If all values are missing then an error is raised. 
+If one or more of the predictors is missing it is replaced with the sample mean. For example if no value is specified for sepal_width, the model will use the average value of 3.06 to return a prediction. If all values are missing then an error is raised. The model used is an SVM but many models can be used with great sucess on the iris dataset.
 
 ## Additional Information
 1. 
